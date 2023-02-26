@@ -1,0 +1,141 @@
+// .benefits {
+// }
+
+.benefits-container {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    gap: 130px;
+    flex-direction: row-reverse;
+  }
+}
+
+.benefits__content {
+  @media screen and (min-width: 768px) {
+    max-width: 500px;
+  }
+}
+
+.benefits__top-text {
+  @extend %top-text;
+
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+
+  color: #303030;
+
+  &::before {
+    content: "";
+
+    width: 60px;
+    height: 1px;
+    background-color: currentColor;
+  }
+}
+
+.benefits__title {
+  @extend %section-title;
+
+  margin-bottom: 20px;
+
+  font-size: 41px;
+
+  color: #303030;
+
+  @media screen and (min-width: 768px) {
+    max-width: 449px;
+
+    font-size: 42px;
+  }
+}
+
+.benefits__bottom-text {
+  margin-bottom: 44px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(30px / 18px);
+  letter-spacing: 0.02em;
+
+  color: #555555;
+}
+
+.benefits__list {
+  display: flex;
+  flex-wrap: wrap;
+  // gap: 30px;
+  // width: 418px;
+  // width: 100%;
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+    margin-left: auto;
+  }
+}
+
+.benefits__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 110px;
+  height: 133px;
+  padding: 20px 35px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: #f7f7f7;
+
+  &:nth-child(odd) {
+    margin-right: 30px;
+  }
+
+  &:nth-child(even) {
+    margin-top: 30px;
+  }
+
+  @media screen and (min-width: 451px) {
+    width: 140px;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 193px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 210px;
+  }
+}
+
+.benefits__span {
+  display: flex;
+  margin-bottom: 6px;
+
+  font-weight: 700;
+  font-size: 42px;
+  // line-height: 57px;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #303030;
+}
+
+.benefits__span--plus {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: calc(22px / 16px);
+  text-align: center;
+
+  color: #ff6c00;
+}
+
+.benefits__text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15px / 11px);
+  text-align: center;
+
+  color: #303030;
+}

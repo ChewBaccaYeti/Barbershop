@@ -1,0 +1,32 @@
+.gallery__top-text {
+  @extend %top-text;
+
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+  margin-bottom: 70px;
+
+  color: #303030;
+
+  &::before {
+    content: "";
+
+    width: 60px;
+    height: 1px;
+    background-color: currentColor;
+  }
+}
+
+.gallery__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
+}
